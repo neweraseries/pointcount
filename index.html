@@ -30,7 +30,6 @@
         extend: {
           fontFamily: {
             sans: ['"Chakra Petch"', '"Noto Sans SC"', '"Noto Sans TC"', '"Noto Sans Thai"', 'sans-serif'],
-            impact: ['"Impact"', '"sans-serif"'],
           }
         }
       }
@@ -680,9 +679,7 @@
                       {broadcastRounds.map((_, i) => (
                         <div key={`header_${i}`} className="flex-1 min-w-[140px] md:min-w-[160px] py-3 md:py-4 text-center border-r border-white/20 last:border-r-0 relative overflow-hidden">
                           <div className="absolute inset-0 bg-white/10 clip-slant-reverse transform translate-x-4 opacity-50"></div>
-                          <span style={{ fontFamily: 'Impact, sans-serif' }} className="relative z-10 text-white text-xl md:text-2xl tracking-wider drop-shadow-sm uppercase">
-                            ROUND {i + 1}
-                          </span>
+                          <span className="relative z-10 text-white font-black italic text-lg md:text-xl tracking-wider drop-shadow-sm">ROUND {i + 1}</span>
                         </div>
                       ))}
                     </div>
